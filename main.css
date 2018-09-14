@@ -1,0 +1,45 @@
+.nopad {
+  padding: 0;
+}
+
+/* .....................first section...................... */
+
+header {
+  height: 110vh;
+  background-color: #1E2032;
+}
+
+.topmenu {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.topmenu div {
+  color: #fff;
+  margin: 26px;
+  letter-spacing: 0.07em;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.title-top, .title {
+  color: #fff;
+  text-align: center;
+}
+
+.title-top {
+  letter-spacing: 0.07em;
+  font-size: 16px;
+  opacity: 0.6;
+  width: 20%;
+  margin: 40px auto;
+  line-height: 36px;
+}
+
+.title {
+  font-size: 109px;
+  font-weight: lighter;
+  line-height: 1.1;
+  margin-top: 59px;
+}
