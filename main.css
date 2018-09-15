@@ -2,10 +2,10 @@
   padding: 0;
 }
 
-/* .....................first section...................... */
+/* .....................section 1...................... */
 
 header {
-  height: 110vh;
+  /* height: 110vh; */
   background-color: #1E2032;
 }
 
@@ -31,7 +31,7 @@ header {
 .title-top {
   letter-spacing: 0.07em;
   font-size: 16px;
-  opacity: 0.6;
+  opacity: 0.7;
   width: 20%;
   margin: 40px auto;
   line-height: 36px;
@@ -42,4 +42,79 @@ header {
   font-weight: lighter;
   line-height: 1.1;
   margin-top: 59px;
+}
+
+/* .....................section 2...................... */
+
+.topics-graphic {
+  width: 100%;
+  max-width: 900px;
+  min-width: 430px;
+  padding: 80px;
+  padding-right: 16%;
+  padding-left: 16%;
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
+.topic-title {
+  width: 80%;
+  font-size: 45px;
+  color: rgba(199, 78, 78, 0.94);
+  letter-spacing: 0.05em;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.topic-items {
+  width: 80%;
+  list-style: none;
+  padding: 0;
+  margin-left: 33px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.topic-items li {
+  margin-bottom: 5px;
+}
+
+.topic-items li:before {
+    content: "•";
+    position: absolute;
+    margin-left: -30px;
+}
+
+.sticky {
+    top: 100px;
+    position: fixed;
+}
+
+/* .....................section 3...................... */
+
+.submissions-container {
+  background-color: #f6f7d2;
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.submissions-title {
+  font-size: 90px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.submissions-subtitle {
+  font-size: 30px;
+  color: rgba(199, 78, 78, 0.94);
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.date {
+  font-size: 14px;
 }
