@@ -115,6 +115,18 @@ header {
   line-height: 1.2;
 }
 
+.submission {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
 .date {
   font-size: 14px;
+  margin-right: 30px;
+  margin-top: 9px;
+}
+
+.description {
+  font-size: 24px;
 }
