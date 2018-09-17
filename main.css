@@ -60,6 +60,13 @@ header {
   font-family: 'space_grotesklight';
 }
 
+.left {
+  text-align: left
+}
+.right {
+  text-align: right
+}
+
 .logo {
   height: 100px;
   width: 50px;
@@ -129,7 +136,7 @@ header {
   list-style: none;
   padding: 0;
   margin-left: 33px;
-  line-height: 30px;
+  line-height: 2;
   margin-bottom: 50px;
 }
 
@@ -364,6 +371,7 @@ footer {
   margin-top: -319px;
   width: 500px;
   position: absolute;
+  z-index: -1;
 }
 
 
@@ -372,15 +380,36 @@ footer {
 /* ...........................................MEDIA QUERIES..................................................... */
 
 @media (max-width: 992px) {
+  .title-top {
+    width: 30%;
+  }
   .container-about .container.top {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .topic-title {
+    font-size: 38px;
+  }
+  .program-title {
+    font-size: 29px;
+  }
+  .program .description {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 768px) {
+  .title-top {
+    width: 50%;
+  }
+  .title {
+    font-size: 100px;
+  }
   .container-about .container.top {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .left, .right {
+    text-align: center;
   }
 }
