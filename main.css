@@ -1,11 +1,14 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
+body > * {
+  font-family: 'space_groteskregular';
+}
 
 .nopad {
   padding: 0;
-}
-
-body {
-  font-family: 'space_groteskregular';
 }
 
 /* .....................section 1...................... */
@@ -27,7 +30,6 @@ header {
   margin: 26px;
   letter-spacing: 0.25em;
   font-size: 14px;
-  opacity: 0.5;
 }
 
 .title-top, .title {
@@ -39,7 +41,6 @@ header {
   font-family: 'simplon_mono_triallight';
   letter-spacing: 0.1em;
   font-size: 17px;
-  opacity: 0.7;
   width: 22%;
   margin: 40px auto;
   line-height: 38px;
@@ -51,6 +52,28 @@ header {
   line-height: 1;
   margin-top: 59px;
   font-family: 'space_grotesklight';
+}
+
+.logo {
+  height: 100px;
+  width: 50px;
+  margin: 30px auto;
+  margin-bottom: 76px;
+}
+
+.triangle1 {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipW;
+  -ms-filter: "FlipW";
+  right: 0;
+  bottom: -279px;
+  /* bottom: -501px; */
 }
 
 /* .....................section 2...................... */
@@ -71,10 +94,11 @@ header {
 .topic-title {
   width: 80%;
   font-size: 45px;
-  color: rgba(199, 78, 78, 0.94);
+  color: #CF6B6A;
   letter-spacing: 0.05em;
   margin-bottom: 15px;
   line-height: 1.2;
+  font-family: 'simplon_mono_trialregular';
 }
 
 .topic-items {
@@ -83,7 +107,7 @@ header {
   padding: 0;
   margin-left: 33px;
   line-height: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .topic-items li {
@@ -110,6 +134,20 @@ header {
   padding-bottom: 100px;
 }
 
+.triangle2 {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  left: 0;
+  margin-top: -115px;
+}
+
 .submissions-title {
   font-size: 90px;
   text-align: center;
@@ -117,8 +155,9 @@ header {
 }
 
 .submissions-subtitle {
+  font-family: 'simplon_mono_trialregular';
   font-size: 30px;
-  color: rgba(199, 78, 78, 0.94);
+  color: #CF6B6A;
   letter-spacing: 0.05em;
   margin-bottom: 40px;
   line-height: 1.2;
@@ -131,6 +170,7 @@ header {
 }
 
 .date {
+  font-family: 'simplon_mono_triallight';
   font-size: 14px;
   margin-right: 30px;
   margin-top: 9px;
@@ -138,4 +178,157 @@ header {
 
 .description {
   font-size: 24px;
+}
+
+.program-title {
+  font-family: 'simplon_mono_trialregular';
+  font-size: 32px;
+  color: #CF6B6A;
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.program-titleTop {
+  text-transform: uppercase;
+  display: inline-flex;
+  font-family: 'simplon_mono_trialregular';
+  font-size: 13px;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 1px;
+  background-color: #CF6B6A;
+  color: #fff;
+  letter-spacing: 0.05em;
+  margin-bottom: 11px;
+}
+
+.program .description {
+  font-size: 22px;
+}
+
+/* .....................section 4...................... */
+
+.container-about {
+  background-color: #1E2032;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 130px;
+  padding-bottom: 150px;
+}
+
+.triangle3 {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  margin-top: -145px;
+}
+
+.container-about .container.top {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.about-title {
+  font-size: 90px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #DED9D9;
+}
+
+.about-paragraph {
+  font-size: 25px;
+  margin-bottom: 60px;
+  color: #DED9D9;
+}
+
+.about-copy {
+  margin-bottom: 70px;
+  color: #DED9D9;
+}
+
+.about-subtitle {
+  font-family: 'simplon_mono_triallight';
+  margin: 10px auto;
+  line-height: 38px;
+  color: #CF6B6A;
+  font-size: 14px;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+}
+
+.organizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.organizer-photo {
+  width: 60%;
+  margin-top: 50px;
+}
+
+.organizer-name {
+  z-index: 2;
+  margin-top: -25px;
+  color: #CF6B6A;
+  font-size: 41px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.organizer-description {
+  font-family: 'simplon_mono_triallight';
+  line-height: 2.2;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+}
+
+.triangle4 {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  z-index: 3;
+  margin-top: 65px;
+  left: 0;
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ...........................................MEDIA QUERIES..................................................... */
+
+@media (max-width: 992px) {
+  .container-about .container.top {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-about .container.top {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
