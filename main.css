@@ -30,6 +30,11 @@ header {
   margin: 26px;
   letter-spacing: 0.25em;
   font-size: 14px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.topmenu div:hover {
+  opacity: 0.6;
 }
 
 .title-top, .title {
@@ -72,8 +77,7 @@ header {
   filter: FlipW;
   -ms-filter: "FlipW";
   right: 0;
-  bottom: -279px;
-  /* bottom: -501px; */
+  margin-top: -45px;
 }
 
 /* .....................section 2...................... */
@@ -85,11 +89,29 @@ header {
   padding: 80px;
   padding-right: 16%;
   padding-left: 16%;
-  position: relative;
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: relative; */
+  /* position: -webkit-sticky;
+  position: sticky; */
   top: 100px;
 }
+
+.sticky {
+  position: fixed;
+  top: 100px;
+}
+
+@media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+    /* IE9+ CSS */
+    .js-is-sticky {
+      max-width: 52%;
+      padding-right: 5%;
+      padding-left: 9%;
+    }
+    .js-is-stuck {
+      top: auto !important;
+    }
+}
+
 
 .topic-title {
   width: 80%;
@@ -118,11 +140,6 @@ header {
     content: "•";
     position: absolute;
     margin-left: -30px;
-}
-
-.sticky {
-    top: 100px;
-    position: fixed;
 }
 
 /* .....................section 3...................... */
@@ -268,6 +285,7 @@ header {
 .organizer-photo {
   width: 60%;
   margin-top: 50px;
+  flex: 0 0 auto;
 }
 
 .organizer-name {
