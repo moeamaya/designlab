@@ -37,3 +37,45 @@ if (isIE()){
       stickybit.update()
     })
 }
+
+/**
+  ................smooth scroll.....................
+  https://gist.github.com/iwazaru/4c8819420ce5237aeaf338339df25c32
+ * @param {int} endX: destination x coordinate
+ * @param {int) endY: destination y coordinate
+ * @param {int} duration: animation duration in ms
+ */
+
+ var topics = document.getElementById('topics').getBoundingClientRect().top
+ var submissions = document.getElementById('submissions').getBoundingClientRect().top
+ var program = document.getElementById('program').getBoundingClientRect().top
+ var about = document.getElementById('about').getBoundingClientRect().top
+ var organizers = document.getElementById('organizers').getBoundingClientRect().top + 100
+ var sponsors = document.getElementById('sponsors').getBoundingClientRect().top - 200
+
+
+ window.smoothScrollTo = function(endX, endY, duration) {
+   var startX = window.scrollX || window.pageXOffset,
+     startY = window.scrollY || window.pageYOffset,
+     distanceX = endX - startX,
+     distanceY = endY - startY,
+     startTime = new Date().getTime();
+
+   duration = typeof duration !== 'undefined' ? duration : 400;
+
+   // Easing function
+   var easeInOutQuart = function(time, from, distance, duration) {
+     if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
+     return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
+   };
+
+   var timer = window.setInterval(function() {
+     var time = new Date().getTime() - startTime,
+       newX = easeInOutQuart(time, startX, distanceX, duration),
+       newY = easeInOutQuart(time, startY, distanceY, duration);
+     if (time >= duration) {
+       window.clearInterval(timer);
+     }
+     window.scrollTo(newX, newY);
+   }, 1000 / 60); // 60 fps
+ };
