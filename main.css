@@ -90,6 +90,10 @@ header {
 
 /* .....................section 2...................... */
 
+.col-scroll {
+  padding-top: 265px;
+}
+
 .topics-graphic {
   width: 100%;
   max-width: 900px;
@@ -171,6 +175,10 @@ header {
   -ms-filter: "FlipH";
   left: 0;
   margin-top: -115px;
+}
+
+.submissions {
+  margin-bottom: 80px
 }
 
 .submissions-title {
@@ -402,6 +410,7 @@ footer {
   .topmenu {
     justify-content: flex-start;
     overflow-x: scroll;
+    padding-top: 0;
   }
   .topmenu::-webkit-scrollbar {
     height: 1px !important;
@@ -412,6 +421,9 @@ footer {
     background-color: rgba(255, 255, 255, 0.57);
     border-radius: 2px;
   }
+  .circle-footer {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: 768px) {
@@ -421,11 +433,159 @@ footer {
   .title {
     font-size: 100px;
   }
+  .logo {
+    margin: 0 auto;
+    margin-bottom: 76px;
+  }
   .container-about .container.top {
     padding-left: 0px;
     padding-right: 0px;
   }
   .left, .right {
     text-align: center;
+  }
+  .col-scroll {
+    padding-top: 0;
+    padding-right: 55px !important;
+    padding-left: 55px !important;
+  }
+  .submissions-container {
+    margin-top: 30px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-right: 55px !important;
+    padding-left: 55px !important;
+  }
+  .submissions {
+    margin-bottom: 70px;
+  }
+  .submissions-title {
+    margin-bottom: 5px;
+    font-size: 68px;
+  }
+  .submissions-subtitle {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .submission {
+    margin-bottom: 0;
+  }
+  .program-title {
+    margin-bottom: 30px;
+  }
+  .container-about {
+    margin-top: 0;
+    padding-top: 60px;
+  }
+  .triangle3 {
+    margin-top: -83px;
+  }
+  .about-title {
+    font-size: 68px;
+  }
+  .about-copy {
+    margin-bottom: 37px;
+  }
+  .about-copy.bot {
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 70px;
+  }
+  .title-top {
+    margin: 28px auto;
+    width: 70%;
+  }
+  .topics-graphic {
+    min-width: 0;
+  }
+  .submissions-title {
+    font-size: 50px;
+  }
+  .about-title {
+    font-size: 50px;
+  }
+  .about-copy.top {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .about-paragraph {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .footer-title {
+    font-size: 57px;
+  }
+  .footer-subtitle {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 54px;
+  }
+  .title-top {
+    width: 94%;
+  }
+  .col-scroll {
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+  }
+  .topics-graphic {
+    padding: 63px;
+    padding-right: 16%;
+    padding-left: 16%;
+  }
+  .topic-title {
+    font-size: 29px;
+  }
+  .submissions-title {
+    font-size: 43px;
+  }
+  .submissions-subtitle {
+    margin-top: 37px;
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+  .description {
+    font-size: 17px;
+  }
+  .program-title {
+    font-size: 25px;
+  }
+  .submissions-container {
+    padding-bottom: 44px;
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+  }
+  .container-about {
+    margin-bottom: 60px;
+  }
+  .about-title {
+    font-size: 43px;
+  }
+  .about-paragraph {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .about-copy.top {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .about-copy.bot {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+  .organizer-name {
+    margin-top: -20px;
+    font-size: 32px;
   }
 }
