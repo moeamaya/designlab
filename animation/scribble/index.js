@@ -9,7 +9,6 @@ function scribble(el, jibrish, duration = 1200) {
   const white = [255, 255, 255]
   const list = document.createElement("div")
   const clones = Array.from(chars, createClone)
-
   setup()
   clones.forEach(initClone)
 
@@ -17,8 +16,9 @@ function scribble(el, jibrish, duration = 1200) {
   let raf = requestAnimationFrame(loop)
 
   function setup() {
-    el.textContent = null
+    el.innerHTML = null
     el.appendChild(list)
+    el.style.opacity = 1
   }
 
   function initClone(x, i) {
@@ -58,7 +58,7 @@ function scribble(el, jibrish, duration = 1200) {
 }
 
 const jibrish = [
-  ...Array.from({ length: 5 }, () => `&nbsp;`),
+  ...Array.from({ length: 5 }).fill(`&nbsp;`),
   ">",
   "<",
   "#",
