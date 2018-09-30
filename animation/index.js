@@ -6,8 +6,11 @@ function animationA() {
     .then(pushAnimation)
     .then(delay(450))
     .then(scribbleAnimation)
+  simplexAnimation()
 }
 
 animationA()
 
 // blotterAnimation()
+
+

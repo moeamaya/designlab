@@ -45,7 +45,12 @@ function stagger(
 
 function staggerAnimation() {
   return new Promise(res => {
-    stagger(document.querySelector(".title"), 350, "vertical", [
+    stagger(document.querySelector(".title-1"), 350, "vertical", [
+      `rgba(255,255,255, 1)`,
+      `rgba(255,255,255, 0.9)`,
+      `rgba(255,255,255, 0.8)`
+    ])
+    stagger(document.querySelector(".title-2"), 500, "vertical", [
       `rgba(255,255,255, 1)`,
       `rgba(255,255,255, 0.9)`,
       `rgba(255,255,255, 0.8)`
