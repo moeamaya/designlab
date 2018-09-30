@@ -1,0 +1,97 @@
+.pusher_list {
+  --in_ease: linear;
+  --out_ease: linear;
+
+  position: relative;
+  display: flex;
+}
+
+.pusher_item {
+  position: absolute;
+  text-transform: uppercase;
+  opacity: 0;
+  top: 0;
+  transform: scaleX(1);
+}
+
+/* ---------------------------------  HORIZONTAL  -------------------------------- */
+.out.horizontal {
+  opacity: 1;
+  transform: scaleX(1);
+  transform-origin: right;
+  animation: outHorizontal var(--duration) var(--out_ease) forwards;
+}
+
+.in.horizontal {
+  opacity: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: inHorizontal var(--duration) var(--in_ease) forwards;
+}
+
+@keyframes outHorizontal {
+  100% {
+    transform: scaleX(0);
+  }
+}
+@keyframes inHorizontal {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/* ----------------------------------  VERTICAL  --------------------------------- */
+
+.in.vertical {
+  opacity: 1;
+  transform: scaleY(0);
+  transform-origin: center;
+  animation: inVertical calc(var(--duration) * 1) var(--in_ease) forwards;
+}
+.out.vertical {
+  opacity: 1;
+  transform: scaleY(1);
+  transform-origin: center;
+  animation: outVertical calc(var(--duration) * 1) var(--out_ease) forwards;
+}
+@keyframes outVertical {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+  100% {
+    transform: translateY(100%) scaleY(0);
+  }
+}
+@keyframes inVertical {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+/* -----------------------------------  CUSTOM  ---------------------------------- */
+
+.desform {
+  justify-content: center;
+}
+.location,
+.host,
+.dates {
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .host {
+    justify-content: flex-start;
+  }
+  .dates {
+    justify-content: flex-end;
+  }
+}
+
+#location,
+#host,
+#dates {
+  opacity: 0;
+}
