@@ -1,0 +1,49 @@
+.stagger_list {
+  position: relative;
+
+  --ease: linear;
+  --in_ease: var(--ease);
+  --out_ease: var(--ease);
+  --duration: 3s;
+  --delay: 0.15s;
+  display: flex;
+  justify-content: center;
+}
+
+.stagger_item {
+  user-select: none;
+  position: absolute;
+  opacity: 0;
+  --offset: calc(var(--total_items) - var(--item_index));
+  --offset_percent: calc(var(--offset) / var(--total_items));
+  --dur: var(--duration);
+  --delay: calc(0.2s * var(--offset_percent));
+  transform-origin: top;
+}
+.stagger_item:first-of-type {
+  animation: stagger var(--dur) var(--delay) forwards;
+}
+.stagger_item:not(:first-of-type) {
+  animation: stagger var(--dur) var(--delay) forwards,
+    fade 0.2s calc(var(--delay) + var(--duration)) forwards;
+}
+
+@keyframes stagger {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: var(--o);
+    transform: scaleY(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: var(--o);
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,13 @@
+
+.scribble_item {
+  transform: background 0.1s ease;
+}
+
+/* consumer */
+#location_t1,
+#location_t2,
+#location_t3,
+#host_t1,
+#dates_t1 {
+  opacity: 0;
+}

@@ -1,244 +1,286 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Beyond Intelligence 2019 — MIT Design Lab</title>
-    <link rel="icon" type="image/png" href="./img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="./fonts.css">
-    <link rel="stylesheet" type="text/css" href="./main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  </head>
 
-  <body>
-    <header class="container-fluid" style="padding-bottom: 40px;">
-      <div class="topmenu">
-        <div onclick="smoothScrollTo(0, topics, 700)">TOPICS</div>
-        <div onclick="smoothScrollTo(0, submissions, 900)">SUBMISSIONS</div>
-        <div onclick="smoothScrollTo(0, program, 1000)">PROGRAM</div>
-        <div onclick="smoothScrollTo(0, about, 1200)">ABOUT</div>
-        <div onclick="smoothScrollTo(0, organizers, 1500)">ORGANIZERS</div>
-        <div onclick="smoothScrollTo(0, sponsors, 1700)">SPONSORS</div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Beyond Intelligence 2019 — MIT Design Lab</title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="./fonts.css">
+  <link rel="stylesheet" type="text/css" href="./animation/pusher/pusher.css">
+  <link rel="stylesheet" type="text/css" href="./animation/scribble/scribble.css">
+  <link rel="stylesheet" type="text/css" href="./animation/stagger/stagger.css">
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="container-fluid" style="padding-bottom: 40px;">
+    <div class="topmenu">
+      <div onclick="smoothScrollTo(0, topics, 700)">TOPICS</div>
+      <div onclick="smoothScrollTo(0, submissions, 900)">SUBMISSIONS</div>
+      <div onclick="smoothScrollTo(0, program, 1000)">PROGRAM</div>
+      <div onclick="smoothScrollTo(0, about, 1200)">ABOUT</div>
+      <div onclick="smoothScrollTo(0, organizers, 1500)">ORGANIZERS</div>
+      <div onclick="smoothScrollTo(0, sponsors, 1700)">SPONSORS</div>
+    </div>
+    <div class="title-top">
+      <span style="color: #CF6B6A; font-size: 14px; letter-spacing: 0.23em;">
+        <span id="desform">DESFORM 2019</span>
+      </span><br />
+      <span id='t3'> Design and Semantics of</span>
+      <span id="t4">Form and Movement, XI edition</span>
+    </div>
+    <div class="title">
+      Beyond Intelligence
+      <!-- <span id="t1">Beyond</span>
+      <span id="t2">Intelligence</span> -->
+    </div>
+    <div class="row" style="margin-top: 45px">
+      <div class="col-md-2 offset-md-2 title-top left">
+        <span id="host" style="color: #ECEB9F; font-size: 14px; letter-spacing: 0.23em;">
+          HOST
+        </span><br />
+        <span id="host_t1"> MIT Design Lab</span>
       </div>
-      <div class="title-top">
-        <span style="color: #CF6B6A; font-size: 14px; letter-spacing: 0.23em;">
-          DESFORM 2019
-        </span><br/>
-        Design and Semantics of
-        Form and Movement, XI edition
+      <div class="col-md-4 title-top">
+        <span id="location" style="color: #ECEB9F; font-size: 14px; letter-spacing: 0.23em;">
+          LOCATION
+        </span><br />
+        <span id="location_t1">
+          Massachusetts Institute of Technology
+        </span>
+        <span id="location_t2">Cambridge, MA</span>
+        <span id="location_t3"> (exact venue TBD)</span>
       </div>
-      <div class="title">Beyond <br/>Intelligence</div>
-      <div class="row" style="margin-top: 45px">
-        <div class="col-md-2 offset-md-2 title-top left">
-          <span style="color: #ECEB9F; font-size: 14px; letter-spacing: 0.23em;">
-            HOST
-          </span><br/>
-          MIT Design Lab
-        </div>
-        <div class="col-md-4 title-top">
-          <span style="color: #ECEB9F; font-size: 14px; letter-spacing: 0.23em;">
-            LOCATION
-          </span><br/>
-          Massachusetts Institute of Technology<br/>
-          Cambridge, MA<br/>
-          (exact venue TBD)
-        </div>
-        <div class="col-md-2 title-top right">
-          <span style="color: #ECEB9F; font-size: 14px; letter-spacing: 0.23em;">
-            DATES
-          </span><br/>
+      <div class="col-md-2 title-top right">
+        <span id="dates" style="color: #ECEB9F; font-size: 14px; letter-spacing: 0.23em;">
+          DATES
+        </span><br />
+        <span id="dates_t1">
           October 9-11th, 2019
-        </div>
-        <div class="col-md-2"></div>
+        </span>
       </div>
-      <div class="row" style="margin-top: 45px">
-        <a href="https://design.mit.edu/" class="logoLink">
-          <img class="logo" src="./img/logo.svg"/>
-        </a>
-      </div>
-      <img class="triangle1" src="./img/triangle.svg"/>
-    </header>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row" style="margin-top: 45px">
+      <a href="https://design.mit.edu/" class="logoLink">
+        <img class="logo" src="./img/logo.svg" />
+      </a>
+    </div>
+    <img class="triangle1" src="./img/triangle.svg" />
+  </header>
 
-    <main class="container-fluid" id="topics">
-      <div class="row">
-        <div class="col-md-7 topic-col">
-          <img class="topics-graphic" src="./img/conference.png"/>
-        </div>
-        <div class="col-md-5 col-scroll">
-          <div class="topic-title">Lorem ipsum dolor</div>
-          <ul class="topic-items">
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-          </ul>
-          <div class="topic-title">Lorem ipsum dolor</div>
-          <ul class="topic-items">
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-          </ul>
-          <div class="topic-title">Lorem ipsum dolor</div>
-          <ul class="topic-items">
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-          </ul>
-
-        </div>
+  <main class="container-fluid" id="topics">
+    <div class="row">
+      <div class="col-md-7 topic-col">
+        <img class="topics-graphic" src="./img/conference.png" />
       </div>
-    </main>
+      <div class="col-md-5 col-scroll">
+        <div class="topic-title">Lorem ipsum dolor</div>
+        <ul class="topic-items">
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+        </ul>
+        <div class="topic-title">Lorem ipsum dolor</div>
+        <ul class="topic-items">
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+        </ul>
+        <div class="topic-title">Lorem ipsum dolor</div>
+        <ul class="topic-items">
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+        </ul>
 
-    <main class="container-fluid submissions-container" id="submissions">
-      <img class="triangle2" src="./img/triangle.svg"/>
-      <div class="submissions-title">
-        Submissions
       </div>
-      <div class="row">
-        <div class="col-md-6 offset-md-2">
-          <div class="submissions-subtitle">Key Dates</div>
-          <div class="submission">
+    </div>
+  </main>
+
+  <main class="container-fluid submissions-container" id="submissions">
+    <img class="triangle2" src="./img/triangle.svg" />
+    <div class="submissions-title">
+      Submissions
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-2">
+        <div class="submissions-subtitle">Key Dates</div>
+        <div class="submission">
+          <div class="date">FEB 15, 2019</div>
+          <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
+        </div>
+        <div class="submission">
+          <div class="date">FEB 15, 2019</div>
+          <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
+        </div>
+
+      </div>
+      <div class="col-md-2">
+        <div class="submissions-subtitle">Applying</div>
+        <div class="description" style="margin-bottom: 25px;">[Call for papers]</div>
+        <div class="description" style="margin-bottom: 25px;">[Call for papers]</div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </main>
+
+  <main class="container-fluid" id="program">
+    <div class="row">
+      <div class="col-md-7">
+        <img class="topics-graphic" src="./img/program.png" style="margin-left: -10px;" />
+      </div>
+      <div class="col-md-5 col-scroll">
+        <div class="program-titleTop">Lorem ipsum dolor</div>
+        <div class="program-title">Lorem ipsum dolor</div>
+        <div class="submissions">
+          <div class="submission program">
             <div class="date">FEB 15, 2019</div>
             <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
           </div>
-          <div class="submission">
+          <div class="submission program">
             <div class="date">FEB 15, 2019</div>
             <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
           </div>
+          <div class="submission program">
+            <div class="date">FEB 15, 2019</div>
+            <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
+          </div>
+        </div>
 
+        <div class="program-titleTop">Lorem ipsum dolor</div>
+        <div class="program-title">Lorem ipsum dolor</div>
+        <div class="submissions">
+          <div class="submission program">
+            <div class="date">FEB 15, 2019</div>
+            <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
+          </div>
+          <div class="submission program">
+            <div class="date">FEB 15, 2019</div>
+            <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
+          </div>
+          <div class="submission program">
+            <div class="date">FEB 15, 2019</div>
+            <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
+          </div>
         </div>
-        <div class="col-md-2">
-          <div class="submissions-subtitle">Applying</div>
-          <div class="description" style="margin-bottom: 25px;">[Call for papers]</div>
-          <div class="description" style="margin-bottom: 25px;">[Call for papers]</div>
-        </div>
-        <div class="col-md-2"></div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <main class="container-fluid" id="program">
+  <main class="container-fluid container-about" id="about">
+    <img class="triangle3" src="./img/triangle.svg" />
+    <div class="container top">
+      <div class="about-title">
+        About
+      </div>
+      <div class="about-paragraph">
+        In 2005 DeSForM was born in (Eindhoven) the Netherlands with the premise of creating meaning through objects,
+        interactions and people.
+      </div>
+      <div class="about-copy top">
+        Over the years, the DeSForM community has explored and designed objects through a multisensorial approach
+        always aiming at enriching users’ experiences with them. Throughout previous editions we have seen the
+        development from digital and mechanical objects that had enriched sensorial presence to adaptive and
+        intelligent objects that feel almost analogous to reality given their increased information processing power
+        and sensory resolution. These are thanks to the recent developments in the material sciences, robotics,
+        information and sensor technology, and improved production techniques. Consequently, the arena that belongs to
+        design researchers and practitioners has gotten more sophisticated by being more technical, but also raises new
+        questions regarding the effect and the impact of the new technologically rich designs. In 2017, DeSForM is
+        returning to its place of birth opening up to a broader audience with deeper insights to debate about the
+        future of dynamic “form” giving and its effects on people and their environment. The conference will be hosted
+        by the industrial design schools of TU Delft and TU Eindhoven.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 offset-md-2 about-copy bot">
+        <div class="about-subtitle">
+          10th Edition
+        </div>
+        DeSForM will bring you the best Dutch design can offer in collaboration with Design United and Philips Design.
+        Participants will have a chance to experience the Dutch Design Week 2017 in Eindhoven, which starts right after
+        the conference on October 21. This international event hosts exhibitions from a great variety of schools,
+        companies and designers.
+      </div>
+      <div class="col-md-4 about-copy bot">
+        <div class="about-subtitle">
+          Conference ambitions
+        </div>
+        DeSForM is an intimate, single-track conference that brings together design researchers, practitioners,
+        students, and companies to have in-depth discussions over ongoing projects. It is an excellent platform for
+        making new connections and bridging research interests. Therefore, we warmly invite multidisciplinary
+        perspectives and discussions on current issues addressed in design research. Join us in Delft and Eindhoven and
+        experience the rich and extensive design research and practice tradition that skillfully combines social
+        sciences, arts and engineering to stimulate design-driven innovations!
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="container" id="organizers">
+      <div class="about-title">
+        Organizers
+      </div>
       <div class="row">
-        <div class="col-md-7">
-          <img class="topics-graphic" src="./img/program.png" style="margin-left: -10px;"/>
-        </div>
-        <div class="col-md-5 col-scroll">
-          <div class="program-titleTop">Lorem ipsum dolor</div>
-          <div class="program-title">Lorem ipsum dolor</div>
-          <div class="submissions">
-            <div class="submission program">
-              <div class="date">FEB 15, 2019</div>
-              <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
-            </div>
-            <div class="submission program">
-              <div class="date">FEB 15, 2019</div>
-              <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
-            </div>
-            <div class="submission program">
-              <div class="date">FEB 15, 2019</div>
-              <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
-            </div>
+        <div class="col-md-4 col-sm-6 organizer">
+          <img class="organizer-photo" src="./img/casale.png" />
+          <div class="organizer-name">Federico Casale</div>
+          <div class="organizer-description">
+            MIT Design Lab<br />
+            <span style="color: #CF6B6A">Special Advisor</span>
           </div>
+        </div>
+        <div class="col-md-4 col-sm-6 organizer">
+          <img class="organizer-photo" src="./img/Lim.png" />
+          <div class="organizer-name">Yihyun Lim</div>
+          <div class="organizer-description">
+            MIT Design Lab<br />
+            <span style="color: #CF6B6A">Co-Chair</span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 organizer">
+          <img class="organizer-photo" src="./img/Colombo.png" />
+          <div class="organizer-name">Sara Colombo</div>
+          <div class="organizer-description">
+            MIT Design Lab<br />
+            <span style="color: #CF6B6A">Co-Chair</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="triangle4" src="./img/triangle.svg" />
+  </main>
 
-          <div class="program-titleTop">Lorem ipsum dolor</div>
-          <div class="program-title">Lorem ipsum dolor</div>
-            <div class="submissions">
-              <div class="submission program">
-                <div class="date">FEB 15, 2019</div>
-                <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
-              </div>
-              <div class="submission program">
-                <div class="date">FEB 15, 2019</div>
-                <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
-              </div>
-              <div class="submission program">
-                <div class="date">FEB 15, 2019</div>
-                <div class="description" style="width: 72%">Sed do eiusmod tempor incididunt ut labore</div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </main>
+  <footer class="container-fluid" id="sponsors">
+    <div class="sponsors-title">Sponsors</div>
+    <div class="row">
 
-    <main class="container-fluid container-about" id="about">
-      <img class="triangle3" src="./img/triangle.svg"/>
-      <div class="container top">
-        <div class="about-title">
-          About
-        </div>
-        <div class="about-paragraph">
-          In 2005 DeSForM was born in (Eindhoven) the Netherlands with the premise of creating meaning through objects, interactions and people.
-        </div>
-        <div class="about-copy top">
-        Over the years, the DeSForM community has explored and designed objects through a multisensorial approach always aiming at enriching users’ experiences with them. Throughout previous editions we have seen the development from digital and mechanical objects that had enriched sensorial presence to adaptive and intelligent objects that feel almost analogous to reality given their increased information processing power and sensory resolution. These are thanks to the recent developments in the material sciences, robotics, information and sensor technology, and improved production techniques. Consequently, the arena that belongs to design researchers and practitioners has gotten more sophisticated by being more technical, but also raises new questions regarding the effect and the impact of the new technologically rich designs. In 2017, DeSForM is returning to its place of birth opening up to a broader audience with deeper insights to debate about the future of dynamic “form” giving and its effects on people and their environment. The conference will be hosted by the industrial design schools of TU Delft and TU Eindhoven.
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 offset-md-2 about-copy bot">
-          <div class="about-subtitle">
-            10th Edition
-          </div>
-          DeSForM will bring you the best Dutch design can offer in collaboration with Design United and Philips Design. Participants will have a chance to experience the Dutch Design Week 2017 in Eindhoven, which starts right after the conference on October 21. This international event hosts exhibitions from a great variety of schools, companies and designers.
-        </div>
-        <div class="col-md-4 about-copy bot">
-          <div class="about-subtitle">
-            Conference ambitions
-          </div>
-          DeSForM is an intimate, single-track conference that brings together design researchers, practitioners, students, and companies to have in-depth discussions over ongoing projects. It is an excellent platform for making new connections and bridging research interests. Therefore, we warmly invite multidisciplinary perspectives and discussions on current issues addressed in design research. Join us in Delft and Eindhoven and experience the rich and extensive design research and practice tradition that skillfully combines social sciences, arts and engineering to stimulate design-driven innovations!
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-      <div class="container" id="organizers">
-        <div class="about-title">
-          Organizers
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 organizer">
-            <img class="organizer-photo" src="./img/casale.png"/>
-            <div class="organizer-name">Federico Casale</div>
-            <div class="organizer-description">
-              MIT Design Lab<br/>
-              <span style="color: #CF6B6A">Special Advisor</span>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 organizer">
-            <img class="organizer-photo" src="./img/Lim.png"/>
-            <div class="organizer-name">Yihyun Lim</div>
-            <div class="organizer-description">
-              MIT Design Lab<br/>
-              <span style="color: #CF6B6A">Co-Chair</span>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 organizer">
-            <img class="organizer-photo" src="./img/Colombo.png"/>
-            <div class="organizer-name">Sara Colombo</div>
-            <div class="organizer-description">
-              MIT Design Lab<br/>
-              <span style="color: #CF6B6A">Co-Chair</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img class="triangle4" src="./img/triangle.svg"/>
-    </main>
+    </div>
+    <div class="footer-title">Beyond <br />Intelligence</div>
+    <div class="footer-subtitle">
+      MIT Design Lab<br />
+      Massachusetts Institute of Technology<br />
+      Cambridge, MA
+    </div>
+    <img class="circle-footer" src="./img/circle.png" />
+  </footer>
 
-    <footer class="container-fluid" id="sponsors">
-      <div class="sponsors-title">Sponsors</div>
-      <div class="row">
+  <script type="text/javascript" src="./stickybits.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/blotter.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/fliesMaterial.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/liquidDistortMaterial.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/slidingDoorMaterial.js"></script>
+  <script type="text/javascript" src="./animation/pusher/index.js"></script>
+  <script type="text/javascript" src="./animation/stagger/index.js"></script>
+  <script type="text/javascript" src="./animation/scribble/index.js"></script>
+  <script type="text/javascript" src="./animation/blotter/index.js"></script>
+  <script type="text/javascript" src="./animation/index.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+</body>
 
-      </div>
-      <div class="footer-title">Beyond <br/>Intelligence</div>
-      <div class="footer-subtitle">
-        MIT Design Lab<br/>
-        Massachusetts Institute of Technology<br/>
-        Cambridge, MA
-      </div>
-      <img class="circle-footer" src="./img/circle.png"/>
-    </footer>
-
-    <script type="text/javascript" src="./stickybits.min.js"></script>
-    <script type="text/javascript" src="./main.js"></script>
-  </body>
 </html>
