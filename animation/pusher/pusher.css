@@ -73,25 +73,32 @@
 /* -----------------------------------  CUSTOM  ---------------------------------- */
 
 .desform {
-  justify-content: center;
+  /*justify-content: center;*/
+}
+.location {
 }
 .location,
 .host,
 .dates {
-  justify-content: center;
+
+  /*justify-content: center;*/
 }
 
 @media (min-width: 768px) {
   .host {
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
   }
   .dates {
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
   }
 }
 
+#desform {
+  opacity: 0;
+}
 #location,
 #host,
 #dates {
+  height:13px;
   opacity: 0;
 }

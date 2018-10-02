@@ -8,6 +8,10 @@ body > * {
   color: #1E2238;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .nopad {
   padding: 0;
 }
@@ -16,13 +20,20 @@ body > * {
 
 header {
   /* height: 110vh; */
-  background-color: #1E2032;
+  position: relative;
+  background-color: #1E2238;
+  overflow: hidden;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
 }
 
 .topmenu {
   display: flex;
-  justify-content: center;
-  padding-top: 15px;
+  /*justify-content: center;*/
+  /*padding-top: 15px;*/
   font-family: 'simplon_mono_triallight', monospace;
 }
 
@@ -40,32 +51,26 @@ header {
 
 .title-top, .title {
   color: #fff;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .title-top {
   font-family: 'simplon_mono_triallight', monospace;
+  font-size: 12px;
   letter-spacing: 0.1em;
-  font-size: 17px;
-  width: 22%;
-  margin: 40px auto;
+  margin: 140px 0 0;
   line-height: 38px;
 }
 
 .title {
-  font-size: 130px;
+  font-size: 120px;
   font-weight: lighter;
-  line-height: 1;
-  margin-top: 59px;
+  line-height: 0.9;
+  margin-top: 70px;
+  text-align: left;
   font-family: 'space_grotesklight';
 }
 
-.left {
-  text-align: left
-}
-.right {
-  text-align: right
-}
 
 .logoLink {
   margin: 30px auto;
@@ -81,6 +86,14 @@ header {
   opacity: 0.6;
 }
 
+.header-text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+
 .triangle1 {
   width: 300px;
   height: 100px;
@@ -94,6 +107,28 @@ header {
   right: 0;
   margin-top: -45px;
 }
+
+canvas {
+  position: absolute;
+  top: 10%;
+  right: -40%;
+  animation: fadeIn 3s ease-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  45% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 /* .....................section 2...................... */
 

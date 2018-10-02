@@ -57,7 +57,7 @@ function blotterAnimation() {
   // })
 
   blotter(
-    [select(".title"), select("#desform"), select("#t3"), select("#t4")],
+    [select(".title-1"), select(".title-1"), select("#desform"), select("#t3"), select("#t4")],
     {
       material: new Blotter.LiquidDistortMaterial(),
       uniforms: {
