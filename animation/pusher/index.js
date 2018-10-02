@@ -11,7 +11,6 @@ function pusher(
   const content = el.textContent.trim()
   const clones = Array.from({ length: colors.length }, createClone)
   const list = document.createElement("div")
-  const height = Math.max(el.getBoundingClientRect().height) + "px"
   let currIndex = 0
   let count = 0
   let interval = setInterval(update, duration)
@@ -29,9 +28,8 @@ function pusher(
 
   function setup() {
     list.style.setProperty("--duration", duration + "ms")
-    list.style.height = height
     list.classList = [className, "pusher_list"].filter(_ => _).join(" ")
-    el.textContent = null
+    el.innerHTML = null
     clones.forEach(initClone)
     el.appendChild(list)
   }
@@ -52,7 +50,6 @@ function pusher(
   }
 
   function updateClone(c, i) {
-    c.element.style.height = height
     if (i === currIndex) {
       c.element.classList = ["pusher_item", direction, "in"].join(" ")
       return
@@ -72,6 +69,7 @@ function pusher(
 function pushAnimation() {
   //// consumer
   return new Promise((res, rej) => {
+
     pusher(
       document.querySelector("#host"),
       150,

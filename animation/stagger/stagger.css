@@ -47,3 +47,7 @@
     opacity: 0;
   }
 }
+
+.title-1, .title-2 {
+  opacity: 0;
+}

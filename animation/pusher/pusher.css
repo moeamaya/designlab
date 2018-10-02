@@ -75,9 +75,12 @@
 .desform {
   /*justify-content: center;*/
 }
+.location {
+}
 .location,
 .host,
 .dates {
+
   /*justify-content: center;*/
 }
 
@@ -90,8 +93,12 @@
   }
 }
 
+#desform {
+  opacity: 0;
+}
 #location,
 #host,
 #dates {
+  height:13px;
   opacity: 0;
 }

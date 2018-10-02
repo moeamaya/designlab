@@ -23,6 +23,7 @@ function stagger(
     list.style.height = el.getBoundingClientRect().height + "px"
     el.textContent = null
     el.appendChild(list)
+    el.style.opacity = 1
   }
 
   function createClone(color) {
@@ -50,11 +51,13 @@ function staggerAnimation() {
       `rgba(255,255,255, 0.9)`,
       `rgba(255,255,255, 0.8)`
     ])
-    stagger(document.querySelector(".title-2"), 500, "vertical", [
-      `rgba(255,255,255, 1)`,
-      `rgba(255,255,255, 0.9)`,
-      `rgba(255,255,255, 0.8)`
-    ])
-    setTimeout(res, 350)
+    setTimeout(() => {
+      stagger(document.querySelector(".title-2"), 500, "vertical", [
+        `rgba(255,255,255, 1)`,
+        `rgba(255,255,255, 0.9)`,
+        `rgba(255,255,255, 0.8)`
+      ])
+    }, 220);
+    setTimeout(res, 550)
   })
 }

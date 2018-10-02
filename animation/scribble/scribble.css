@@ -9,5 +9,7 @@
 #location_t3,
 #host_t1,
 #dates_t1 {
+  display: block;
+  line-height: 38px;
   opacity: 0;
 }
