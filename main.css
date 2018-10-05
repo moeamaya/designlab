@@ -34,15 +34,17 @@ header {
 .topmenu {
   display: flex;
   /*justify-content: center;*/
-  /*padding-top: 15px;*/
-  font-family: 'GT_thin', monospace;
+  padding-top: 35px;
+  font-family: 'GT_light', monospace;
+  width: 92%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .topmenu div {
-  color: #fff;
+  color: #DED9D9;
   margin: 26px;
-  letter-spacing: 0.25em;
-  font-size: 14px;
+  letter-spacing: 0.3em;
+  font-size: 13px;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -80,7 +82,6 @@ header {
 .logo {
   height: 100px;
   width: 50px;
-  margin-bottom: 76px;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -415,7 +416,28 @@ footer {
   position: relative;
 }
 
-.sponsors-title {
+.botmenu {
+  display: flex;
+  padding-top: 135px;
+  margin-bottom: 135px;
+  font-family: 'GT_regular', monospace;
+  width: 92%;
+  border-bottom: 1px solid rgba(207, 106, 105, 0.3);
+}
+
+.botmenu div {
+  color: #bf5857;
+  margin: 26px;
+  letter-spacing: 0.3em;
+  font-size: 13px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.botmenu div:hover {
+  opacity: 0.6;
+}
+
+/* .sponsors-title {
   font-size: 32px;
   text-align: center;
   margin-bottom: 30px;
@@ -440,7 +462,7 @@ footer {
   line-height: 2;
   margin: 50px auto;
   margin-bottom: 90px;
-}
+} */
 
 .circle-footer {
   right: 0;

@@ -23,15 +23,16 @@
     <div class="container">
       <div class="header-content">
         <div class="topmenu">
-          <div onclick="smoothScrollTo(0, topics, 700)">TOPICS</div>
+          <div onclick="smoothScrollTo(0, topics, 700)" style="margin-left: 0">CALL FOR PAPERS</div>
           <div onclick="smoothScrollTo(0, submissions, 900)">SUBMISSIONS</div>
           <div onclick="smoothScrollTo(0, program, 1000)">PROGRAM</div>
-          <div onclick="smoothScrollTo(0, about, 1200)">ABOUT</div>
-          <div onclick="smoothScrollTo(0, organizers, 1500)">ORGANIZERS</div>
-          <div onclick="smoothScrollTo(0, sponsors, 1700)">SPONSORS</div>
+          <div onclick="smoothScrollTo(0, committee, 1200)">COMMITTEE</div>
+          <div onclick="smoothScrollTo(0, venue, 1600)">VENUE</div>
+          <div onclick="smoothScrollTo(0, venue, 1800)">ATTENDING</div>
+          <div onclick="smoothScrollTo(0, about, 1800)">ABOUT</div>
         </div>
 
-        <div class="" style="position: absolute;right:0">
+        <div class="" style="position: absolute; right: 0; top: 55px;">
           <a href="https://design.mit.edu/" class="logoLink">
             <img class="logo" src="./img/logo.svg" />
           </a>
@@ -97,7 +98,6 @@
         </div>
       </div>
     </div>
-
 
     <canvas id="canvas"></canvas>
     <img class="triangle1" src="./img/triangle.svg" />
@@ -232,7 +232,7 @@
     </div>
   </main>
 
-  <main class="container-fluid container-about" id="about">
+  <main class="container-fluid container-about" id="committee">
     <img class="triangle3" src="./img/triangle.svg" />
     <div class="container">
       <div class="about-title">
@@ -422,7 +422,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row" id="about">
       <div class="paper-title">About DesForM</div>
       <div class="col-md-10 offset-md-2">
         <div class="paragraph">
@@ -431,6 +431,25 @@
         <div class="paragraph">
           DeSForM will bring you the best Dutch design can offer in collaboration with Design United and Philips Design. Participants will have a chance to experience the Dutch Design Week 2017 in Eindhoven, which starts right after the conference on October 21. This international event hosts exhibitions from a great variety of schools, companies and designers.
         </div>
+      </div>
+    </div>
+  </main>
+
+  <main class="container">
+    <div class="header-content">
+      <div class="botmenu">
+        <div onclick="smoothScrollTo(0, topics, 700)" style="margin-left: 0">CALL FOR PAPERS</div>
+        <div onclick="smoothScrollTo(0, submissions, 900)">SUBMISSIONS</div>
+        <div onclick="smoothScrollTo(0, program, 1000)">PROGRAM</div>
+        <div onclick="smoothScrollTo(0, committee, 1200)">COMMITTEE</div>
+        <div onclick="smoothScrollTo(0, venue, 1600)">VENUE</div>
+        <div onclick="smoothScrollTo(0, venue, 1800)">ATTENDING</div>
+        <div onclick="smoothScrollTo(0, about, 1800)">ABOUT</div>
+      </div>
+      <div class="" style="position: absolute; right: 0; bottom: -48px;">
+        <a href="https://design.mit.edu/" class="logoLink">
+          <img class="logo" src="./img/logo_black.svg" />
+        </a>
       </div>
     </div>
   </main>

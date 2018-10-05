@@ -46,12 +46,16 @@ if (isIE()){
  * @param {int} duration: animation duration in ms
  */
 
- var topics = document.getElementById('topics').getBoundingClientRect().top
- var submissions = document.getElementById('submissions').getBoundingClientRect().top
- var program = document.getElementById('program').getBoundingClientRect().top
- var about = document.getElementById('about').getBoundingClientRect().top
- var organizers = document.getElementById('organizers').getBoundingClientRect().top + 100
- var sponsors = document.getElementById('sponsors').getBoundingClientRect().top - 200
+
+// document.addEventListener("DOMContentLoaded", function() {
+// })
+
+var topics = document.getElementById('topics').getBoundingClientRect().top
+var submissions = document.getElementById('submissions').getBoundingClientRect().top
+var program = document.getElementById('program').getBoundingClientRect().top
+var about = document.getElementById('about').getBoundingClientRect().top
+var committee = document.getElementById('committee').getBoundingClientRect().top
+var venue = document.getElementById('venue').getBoundingClientRect().top
 
 
  window.smoothScrollTo = function(endX, endY, duration) {
