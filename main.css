@@ -219,6 +219,11 @@ canvas {
 
 /* .....................section 3...................... */
 
+.row.program {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
 .submissions-container {
   background-color: #f6f7d2;
   margin-top: 100px;
@@ -260,6 +265,10 @@ canvas {
   line-height: 1.2;
 }
 
+.submissions-subtitle.program {
+  margin-top: 119px;
+}
+
 .submission {
   display: flex;
   align-items: flex-start;
@@ -276,6 +285,10 @@ canvas {
 
 .description {
   font-size: 24px;
+}
+
+.description.dates {
+  width: 72%;
 }
 
 .program-title {
@@ -409,6 +422,14 @@ canvas {
   filter: contrast(140%);
 }
 
+.venue.paper-title {
+  margin-top: 308px;
+}
+
+.venue.paragraph {
+  margin-top: 95px;
+}
+
 /* ....................footer............................. */
 
 footer {
@@ -435,6 +456,12 @@ footer {
 }
 .botmenu div:hover {
   opacity: 0.6;
+}
+
+.logoBot {
+  position: absolute;
+  right: 0;
+  bottom: -48px;
 }
 
 /* .sponsors-title {
@@ -479,25 +506,6 @@ footer {
 /* ...........................................MEDIA QUERIES..................................................... */
 
 @media (max-width: 992px) {
-  .title-top {
-    width: 30%;
-  }
-  .container-about .container.top {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .topic-title {
-    font-size: 38px;
-  }
-  .program-title {
-    font-size: 29px;
-  }
-  .program .description {
-    font-size: 19px;
-  }
-}
-
-@media (max-width: 892px) {
   .topmenu {
     justify-content: flex-start;
     overflow-x: scroll;
@@ -512,6 +520,55 @@ footer {
     background-color: rgba(255, 255, 255, 0.57);
     border-radius: 2px;
   }
+  .title-top {
+    width: 30%;
+  }
+  .container-about .container.top {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .topic-title {
+    font-size: 38px;
+  }
+  .topic-items {
+    width: 90%;
+  }
+  .program-title {
+    font-size: 29px;
+  }
+  .program .description {
+    font-size: 19px;
+  }
+  .organizer-name {
+    font-size: 28px;
+  }
+  .organizer-name.papercom {
+    font-size: 27px;
+  }
+  .botmenu {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding-top: 80px;
+    width: 100%;
+  }
+  .botmenu::-webkit-scrollbar {
+    height: 1px !important;
+    border-radius: 2px;
+    background-color: rgba(207, 106, 105, 0.2);
+  }
+  .botmenu::-webkit-scrollbar-thumb {
+    background-color: rgba(207, 106, 105, 0.9);
+    border-radius: 2px;
+  }
+  .logoBot {
+    right: 45%;
+    bottom: -269px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 892px) {
+
   .circle-footer {
     opacity: 0.5;
   }
@@ -534,10 +591,13 @@ footer {
   .left, .right {
     text-align: center;
   }
-  .col-scroll {
+  /* .col-scroll {
     padding-top: 0;
     padding-right: 55px !important;
     padding-left: 55px !important;
+  } */
+  .row.program {
+    padding-top: 57px;
   }
   .submissions-container {
     margin-top: 30px;
@@ -557,8 +617,14 @@ footer {
     margin-top: 40px;
     margin-bottom: 30px;
   }
+  .submissions-subtitle.program {
+    margin-top: 10px;
+  }
   .submission {
     margin-bottom: 0;
+  }
+  .description.dates {
+    width: 100%;
   }
   .program-title {
     margin-bottom: 30px;
@@ -566,6 +632,7 @@ footer {
   .container-about {
     margin-top: 0;
     padding-top: 60px;
+    margin-bottom: 20px;
   }
   .triangle3 {
     margin-top: -83px;
@@ -580,15 +647,26 @@ footer {
     padding-left: 55px !important;
     padding-right: 55px !important;
   }
+  .organizer-photo {
+    width: 180px;
+  }
 }
 
 @media (max-width: 600px) {
+  main {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
   .title {
     font-size: 70px;
   }
   .title-top {
     margin: 28px auto;
     width: 70%;
+  }
+  .paper-title {
+    font-size: 62px;
+    padding-left: 15px;
   }
   .topics-graphic {
     min-width: 0;
@@ -607,12 +685,33 @@ footer {
     padding-left: 40px !important;
     padding-right: 40px !important;
   }
+  .committee-subtitle {
+    font-size: 33px;
+  }
+  .organizer-photo.papercom {
+    width: 124px;
+  }
+  .title-img {
+    margin-top: -550px;
+    height: 400px;
+  }
   .footer-title {
     font-size: 57px;
   }
   .footer-subtitle {
     padding-left: 40px !important;
     padding-right: 40px !important;
+  }
+  .venue.paper-title {
+    margin-top: 180px;
+    margin-bottom: 15px;
+  }
+  .title-img {
+    margin-top: -424px;
+    height: 400px;
+  }
+  .venue.paragraph {
+    margin-top: 20px;
   }
 }
 
@@ -674,8 +773,5 @@ footer {
     padding-left: 35px !important;
     padding-right: 35px !important;
   }
-  .organizer-name {
-    margin-top: -20px;
-    font-size: 32px;
-  }
+
 }
