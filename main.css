@@ -249,6 +249,10 @@ canvas {
   margin-bottom: 80px
 }
 
+.submissions-container .container {
+  margin-top: 70px;
+}
+
 .submissions-title {
   font-size: 84px;
   text-align: center;
@@ -367,6 +371,10 @@ canvas {
   letter-spacing: 0.05em;
   margin-top: 50px;
   line-height: 1.2;
+}
+
+.paper {
+  padding-left: 15px;
 }
 
 .organizer-photo {
@@ -606,12 +614,15 @@ footer {
     padding-right: 55px !important;
     padding-left: 55px !important;
   }
+  .submissions-container .container {
+    margin-top: 25px;
+  }
   .submissions {
     margin-bottom: 70px;
   }
   .submissions-title {
     margin-bottom: 5px;
-    font-size: 68px;
+    text-align: left;
   }
   .submissions-subtitle {
     margin-top: 40px;
@@ -632,7 +643,7 @@ footer {
   .container-about {
     margin-top: 0;
     padding-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 135px;
   }
   .triangle3 {
     margin-top: -83px;
@@ -668,11 +679,17 @@ footer {
     font-size: 62px;
     padding-left: 15px;
   }
+  .submissions-title {
+    font-size: 62px;
+  }
+  .description {
+    font-size: 20px;
+  }
   .topics-graphic {
     min-width: 0;
   }
-  .submissions-title {
-    font-size: 50px;
+  .submissions-subtitle.program {
+    padding-left: 15px;
   }
   .about-title {
     font-size: 50px;
@@ -690,6 +707,9 @@ footer {
   }
   .organizer-photo.papercom {
     width: 124px;
+  }
+  .organizer-name {
+    margin-bottom: 18px;
   }
   .title-img {
     margin-top: -550px;
@@ -731,11 +751,18 @@ footer {
     padding-right: 16%;
     padding-left: 16%;
   }
+  .paper-title {
+    font-size: 52px;
+  }
+  .program .paper-title {
+    padding-left: 0;
+  }
   .topic-title {
     font-size: 29px;
   }
   .submissions-title {
     font-size: 43px;
+    text-align: left;
   }
   .submissions-subtitle {
     margin-top: 37px;
@@ -754,7 +781,7 @@ footer {
     padding-left: 35px !important;
   }
   .container-about {
-    margin-bottom: 60px;
+    margin-bottom: 106px;
   }
   .about-title {
     font-size: 43px;
@@ -772,6 +799,18 @@ footer {
   .about-copy.bot {
     padding-left: 35px !important;
     padding-right: 35px !important;
+  }
+  .organizer-name {
+    font-size: 25px;
+  }
+  .organizer-description {
+    font-size: 15px;
+  }
+  .organizer-photo.papercom {
+    width: 96px;
+  }
+  .organizer-name.papercom {
+    font-size: 21px;
   }
 
 }
