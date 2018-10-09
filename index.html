@@ -103,11 +103,14 @@
     <img class="triangle1" src="./img/triangle.svg" />
   </header>
 
-  <main class="container" id="topics">
-    <div class="row">
-      <!-- <div class="col-md-7 topic-col">
-        <img class="topics-graphic" src="./img/conference.png" />
-      </div> -->
+  <main class="container" id="topics" style="position: relative;">
+
+    <!-- column container for sticky graphic - must have the class 'topics-graphic' to work -->
+    <div class="stickyColumn">
+      <img class="topics-graphic" src="./img/img.png"/>
+    </div>
+
+    <div class="row" style="padding-top: 50px">
       <div class="paper-title">Call for Paper</div>
       <div class="col-md-10 offset-md-2">
         <div class="subtitle">Designing for connected and expressive artificial ecosystems</div>
@@ -199,12 +202,11 @@
     </div>
   </main>
 
-  <main class="container" id="program">
+  <main class="container" id="program" style="position: relative;">
+    <div class="stickyColumn">
+      <img class="topics-graphic" src="./img/img.png"/>
+    </div>
     <div class="row program">
-      <!-- <div class="col-md-7">
-        <img class="topics-graphic" src="./img/program.png" style="margin-left: -10px;" />
-      </div> -->
-
       <div class="col-md-8">
         <div class="paper-title">Program</div>
       </div>

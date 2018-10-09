@@ -30,7 +30,7 @@ function isIE() {
   return is_ie;
 }
 
-var stickybit = stickybits('.topics-graphic', { useStickyClasses: true })
+var stickybit = stickybits('.topics-graphic', { useStickyClasses: true, stickyBitStickyOffset: 70 })
 
 if (isIE()){
     window.addEventListener('resize', function() {

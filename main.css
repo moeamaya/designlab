@@ -160,14 +160,27 @@ canvas {
 } */
 
 /* .topics-graphic {
-  width: 100%;
+  width: 30%;
+  height: auto;
   max-width: 900px;
   min-width: 430px;
   padding: 80px;
   padding-right: 16%;
   padding-left: 16%;
-  top: 100px;
 } */
+
+.stickyColumn {
+  height: 100%;
+  position: absolute;
+  left: -200px;
+  padding-top: 70px;
+}
+
+.topics-graphic {
+  width: 56%;
+  height: auto;
+  z-index: -1;
+}
 
 .sticky {
   position: fixed;
@@ -541,6 +554,12 @@ footer {
   .topic-items {
     width: 90%;
   }
+  .stickyColumn {
+    left: -153px;
+  }
+  .topics-graphic {
+    width: 43%;
+  }
   .program-title {
     font-size: 29px;
   }
@@ -685,9 +704,6 @@ footer {
   .description {
     font-size: 20px;
   }
-  .topics-graphic {
-    min-width: 0;
-  }
   .submissions-subtitle.program {
     padding-left: 15px;
   }
@@ -746,11 +762,6 @@ footer {
     padding-right: 35px !important;
     padding-left: 35px !important;
   }
-  .topics-graphic {
-    padding: 63px;
-    padding-right: 16%;
-    padding-left: 16%;
-  }
   .paper-title {
     font-size: 52px;
   }
@@ -759,6 +770,13 @@ footer {
   }
   .topic-title {
     font-size: 29px;
+  }
+  .stickyColumn {
+    left: -20px;
+    padding-top: 20px;
+  }
+  .topics-graphic {
+    opacity: 0.9
   }
   .submissions-title {
     font-size: 43px;
