@@ -4,10 +4,13 @@
 }
 
 /* consumer */
+#t3,
+#t4,
 #location_t1,
 #location_t2,
 #location_t3,
 #host_t1,
+#host_t2,
 #dates_t1 {
   display: block;
   line-height: 38px;

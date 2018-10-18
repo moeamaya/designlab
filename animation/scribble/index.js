@@ -68,11 +68,15 @@ const jibrish = [
 
 function scribbleAnimation() {
   return new Promise((res, rej) => {
+    scribble(document.querySelector("#t3"), jibrish, 1200)
+    scribble(document.querySelector("#t4"), jibrish, 1200)
+
     scribble(document.querySelector("#location_t1"), jibrish, 1200)
     scribble(document.querySelector("#location_t2"), jibrish, 1400)
     scribble(document.querySelector("#location_t3"), jibrish, 1700)
 
     scribble(document.querySelector("#host_t1"), jibrish, 1200)
+    scribble(document.querySelector("#host_t2"), jibrish, 1200)
     scribble(document.querySelector("#dates_t1"), jibrish, 1400)
 
     setTimeout(res, 1400)

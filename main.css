@@ -36,7 +36,7 @@ header {
   /*justify-content: center;*/
   padding-top: 35px;
   font-family: 'GT_light', monospace;
-  width: 92%;
+  width: 86%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -66,6 +66,13 @@ header {
   text-transform: uppercase;
 }
 
+.title-top a {
+  color: #fff;
+}
+.title-top a:hover {
+  color: #fff;
+}
+
 .title {
   font-size: 120px;
   font-weight: lighter;
@@ -74,11 +81,43 @@ header {
   text-align: left;
   font-family: 'space_grotesklight';
 }
+.title-abs {
+  position: absolute;
+  top: 1.03em;
+  left: 2.1em;
+  opacity: 1;
+  animation: fadder 2s ease-out;
+}
+@keyframes fadder {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 
 .logoLink {
   margin: 30px auto;
 }
+.logoLinkMIT {
+  position: relative;
+  top: -18px;
+  left: 16px;
+}
+.logoLinkMIT svg {
+  width: 68px;
+  height: 80px;
+}
+
 .logo {
   height: 100px;
   width: 50px;
@@ -172,7 +211,7 @@ canvas {
 .stickyColumn {
   height: 100%;
   position: absolute;
-  left: -200px;
+  left: -280px;
   padding-top: 70px;
 }
 
@@ -180,6 +219,18 @@ canvas {
   width: 56%;
   height: auto;
   z-index: -1;
+  animation: heroCircle 8s linear infinite;
+}
+@keyframes heroCircle {
+/*  0%   { transform: rotate3d(0,0,0) scale(1); }
+  25%  { transform: rotate3d(0.25,0.50,0.25,90deg) scale(1);}
+  50%  { transform: rotate3d(0.50,1,0.50,180deg) scale(1.5);}
+  75%  { transform: rotate3d(0.75,1.5,0.25,270deg) scale(1);}
+  100% { transform: rotate3d(1,2,1,360deg) scale(1); }*/
+  0% { transform: scaleX(1) skew(0deg); }
+  33% { transform: scaleX(1.1) skewY(5deg); }
+  66% { transform: scaleX(0.9) skew(1deg); }
+  100% { transform: scaleX(1) skew(0deg); }
 }
 
 .sticky {
@@ -457,15 +508,15 @@ canvas {
 footer {
   overflow: hidden;
   position: relative;
+  margin-top: 12em;
+  margin-bottom: 6em;
 }
 
 .botmenu {
   display: flex;
-  padding-top: 135px;
-  margin-bottom: 135px;
   font-family: 'GT_regular', monospace;
   width: 92%;
-  border-bottom: 1px solid rgba(207, 106, 105, 0.3);
+  /*border-bottom: 1px solid rgba(207, 106, 105, 0.3);*/
 }
 
 .botmenu div {
@@ -483,7 +534,8 @@ footer {
 .logoBot {
   position: absolute;
   right: 0;
-  bottom: -48px;
+  top: -10px;
+  /*bottom: -48px;*/
 }
 
 /* .sponsors-title {
