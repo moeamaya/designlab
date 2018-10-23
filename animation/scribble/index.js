@@ -16,6 +16,8 @@ function scribble(el, jibrish, duration = 1200) {
   let raf = requestAnimationFrame(loop)
 
   function setup() {
+    el.style.width = el.getBoundingClientRect().width + 'px'
+    el.style.whiteSpace = 'nowrap'
     el.innerHTML = null
     el.appendChild(list)
     el.style.opacity = 1
@@ -58,7 +60,7 @@ function scribble(el, jibrish, duration = 1200) {
 }
 
 const jibrish = [
-  ...Array.from({ length: 5 }).fill(`&nbsp;`),
+  ...Array.from({ length: 30 }).fill(`&nbsp;`),
   ">",
   "<",
   "#",
