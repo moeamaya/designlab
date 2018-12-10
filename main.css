@@ -604,6 +604,14 @@ footer {
   }
 }
 
+.footer-credit {
+  margin-top: 40px;
+  color: #DED9D9;
+}
+.footer-credit a {
+  color: #bf5857;
+}
+
 /* .sponsors-title {
   font-size: 32px;
   text-align: center;
