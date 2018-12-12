@@ -611,6 +611,9 @@ footer {
 .footer-credit a {
   color: #bf5857;
 }
+.footer-credit a:hover {
+  color: #bf5857;
+}
 
 /* .sponsors-title {
   font-size: 32px;
