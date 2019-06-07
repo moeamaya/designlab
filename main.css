@@ -603,6 +603,16 @@ footer {
     height: 126px;
   }
 }
+@media (min-width: 992px) {
+  .sponsor-logo {
+    width: 150px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  .sponsor-logo:hover {
+    opacity: 0.6;
+  }
+}
 
 .footer-credit {
   margin-top: 40px;
@@ -616,7 +626,7 @@ footer {
 }
 
 .sponsors-title {
-  font-size: 62px;
+  font-size: 40px;
   padding-left: 15px;
   /* font-size: 32px;
   text-align: center;
