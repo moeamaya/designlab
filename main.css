@@ -608,17 +608,12 @@ footer {
 }
 
 .sponsor-logo {
-  position: relative;
+  width: 150px;
+  margin-top: 50px;
+  cursor: pointer;
 }
-@media (min-width: 992px) {
-  .sponsor-logo {
-    width: 150px;
-    margin-top: 50px;
-    cursor: pointer;
-  }
-  .sponsor-logo:hover {
-    opacity: 0.6;
-  }
+.sponsor-logo:hover {
+  opacity: 0.6;
 }
 
 .footer-credit {
