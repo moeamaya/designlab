@@ -643,11 +643,18 @@ footer {
 }
 
 .sponsor-logo {
-  width: 100px;
+  max-width: 100px;
+  max-height: 50px;
   transition: 0.2s;
   cursor: pointer;
 }
 @media (min-width: 992px) {
+  .sponsor-logo {
+    max-width: 100px;
+    max-height: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
   .sponsor-logo:hover {
     opacity: 0.6;
   }
