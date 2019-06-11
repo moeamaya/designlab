@@ -643,9 +643,7 @@ footer {
 }
 
 .sponsor-logo {
-  width: 100px;
-  height: 50px;
-  transition: 0.2s;
+  width: 180px;
   cursor: pointer;
 }
 .sponsor-logo:hover {
