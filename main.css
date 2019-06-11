@@ -606,6 +606,10 @@ footer {
     height: 126px;
   }
 }
+
+.sponsor-logo {
+  position: relative;
+}
 @media (min-width: 992px) {
   .sponsor-logo {
     width: 150px;
