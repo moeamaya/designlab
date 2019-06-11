@@ -599,6 +599,9 @@ footer {
     top: -24px;
     /*padding-bottom: 100px;*/
   }
+  .logoBot:hover {
+    opacity: 0.6;
+  }
   .logoBot .logo {
     height: 126px;
   }
@@ -626,7 +629,7 @@ footer {
 }
 
 .sponsors-title {
-  font-size: 40px;
+  font-size: 50px;
   /* font-size: 32px;
   text-align: center;
   margin-bottom: 30px;
