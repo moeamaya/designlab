@@ -642,7 +642,16 @@ footer {
   margin-bottom: 90px;
 }
 
-
+.sponsor-logo {
+  width: 100px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .sponsor-logo:hover {
+    opacity: 0.6;
+  }
+}
 
 
 
