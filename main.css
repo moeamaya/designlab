@@ -643,14 +643,10 @@ footer {
 }
 
 .sponsor-logo {
-  width: 180px;
-  cursor: pointer;
+  width: 150px;
+  margin-top: 50px;
+  flex: 0 0 auto;
 }
-.sponsor-logo:hover {
-  opacity: 0.6;
-}
-
-
 
 
 /* ...........................................MEDIA QUERIES..................................................... */
@@ -800,6 +796,9 @@ footer {
     padding-right: 55px !important;
   }
   .organizer-photo {
+    width: 180px;
+  }
+  .sponsor-logo {
     width: 180px;
   }
 }
