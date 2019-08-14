@@ -447,6 +447,29 @@ canvas {
   margin-top: 26px;
 }
 
+.keynote-photo {
+  width: 150px;
+  flex: 0 0 auto;
+}
+
+.keynote-name {
+  font-family: 'GT_light', monospace;
+  line-height: 1.8;
+  font-size: 20px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+.keynote-description {
+  font-family: 'GT_light', monospace;
+  line-height: 1.8;
+  font-size: 18px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
 /* .....................section 4...................... */
 
 .container-about {
