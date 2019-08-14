@@ -441,6 +441,12 @@ canvas {
   font-size: 22px;
 }
 
+.keynote-bio {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 26px;
+}
+
 /* .....................section 4...................... */
 
 .container-about {
