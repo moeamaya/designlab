@@ -444,18 +444,17 @@ canvas {
 .keynote-bio {
   font-size: 14px;
   line-height: 1.5;
-  margin-top: 26px;
 }
 
 .keynote-photo {
-  width: 150px;
+  width: 200px;
   flex: 0 0 auto;
 }
 
 .keynote-name {
   font-family: 'GT_light', monospace;
-  line-height: 1.8;
-  font-size: 20px;
+  line-height: 1.6;
+  font-size: 18px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   margin-top: 1em;
@@ -463,8 +462,8 @@ canvas {
 
 .keynote-description {
   font-family: 'GT_light', monospace;
-  line-height: 1.8;
-  font-size: 18px;
+  line-height: 1.5;
+  font-size: 16px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   opacity: 0.5;
