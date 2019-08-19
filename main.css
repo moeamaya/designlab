@@ -459,6 +459,15 @@ canvas {
   text-transform: uppercase;
 }
 
+.keynote-title {
+  font-family: 'GT_light', monospace;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #CF6B6A;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
 .keynote-description {
   font-family: 'GT_light', monospace;
   line-height: 1.5;
