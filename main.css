@@ -441,6 +441,42 @@ canvas {
   font-size: 22px;
 }
 
+.keynote-bio {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.keynote-photo {
+  width: 200px;
+  flex: 0 0 auto;
+}
+
+.keynote-name {
+  font-family: 'GT_light', monospace;
+  line-height: 1.6;
+  font-size: 18px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.keynote-title {
+  font-family: 'GT_light', monospace;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #CF6B6A;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.keynote-description {
+  font-family: 'GT_light', monospace;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
 /* .....................section 4...................... */
 
 .container-about {
