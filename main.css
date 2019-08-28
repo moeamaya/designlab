@@ -531,6 +531,12 @@ canvas {
   padding-left: 15px;
 }
 
+.sponsor-logo {
+  width: 150px;
+  margin-top: 50px;
+  flex: 0 0 auto;
+}
+
 .organizer-photo {
   width: 150px;
   margin-top: 50px;
@@ -591,12 +597,6 @@ canvas {
 
 .venue.paragraph {
   margin-top: 95px;
-}
-
-.sponsor-logo {
-  width: 150px;
-  margin-top: 50px;
-  flex: 0 0 auto;
 }
 
 
