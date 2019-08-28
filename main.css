@@ -531,12 +531,6 @@ canvas {
   padding-left: 15px;
 }
 
-.sponsor-photo {
-  width: 150px;
-  margin-top: 50px;
-  flex: 0 0 auto;
-}
-
 .organizer-photo {
   width: 150px;
   margin-top: 50px;
@@ -601,6 +595,18 @@ canvas {
 
 
 /* ....................footer............................. */
+
+.sponsor-photo {
+  width: 150px;
+  margin-top: 50px;
+  flex: 0 0 auto;
+}
+
+.sponsor-photo2 {
+  width: 180px;
+  margin-top: 50px;
+  flex: 0 0 auto;
+}
 
 footer {
   overflow: hidden;
@@ -837,6 +843,9 @@ footer {
   }
   .sponsor-photo {
     width: 180px;
+  }
+  .sponsor-photo2 {
+    width: 200px;
   }
 }
 
