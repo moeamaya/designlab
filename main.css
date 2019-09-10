@@ -593,7 +593,20 @@ canvas {
   margin-top: 95px;
 }
 
+
 /* ....................footer............................. */
+
+.sponsor-photo {
+  width: 150px;
+  margin-top: 50px;
+  flex: 0 0 auto;
+}
+
+.sponsor-photo2 {
+  width: 180px;
+  margin-top: 50px;
+  flex: 0 0 auto;
+}
 
 footer {
   overflow: hidden;
@@ -676,12 +689,6 @@ footer {
   line-height: 2;
   margin: 50px auto;
   margin-bottom: 90px;
-}
-
-.sponsor-logo {
-  width: 150px;
-  margin-top: 50px;
-  flex: 0 0 auto;
 }
 
 
@@ -834,8 +841,11 @@ footer {
   .organizer-photo {
     width: 180px;
   }
-  .sponsor-logo {
+  .sponsor-photo {
     width: 180px;
+  }
+  .sponsor-photo2 {
+    width: 200px;
   }
 }
 
