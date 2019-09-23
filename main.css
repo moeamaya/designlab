@@ -598,15 +598,13 @@ canvas {
 
 .sponsor-photo {
   width: 150px;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 50px;
   flex: 0 0 auto;
 }
 
 .sponsor-photo2 {
   width: 180px;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 50px;
   flex: 0 0 auto;
 }
 
